@@ -23,6 +23,8 @@ section:nth-child(even){
     height: 235px;
     background-color: #580b33;
     position: relative;
+    padding: 8px;
+    overflow: hidden;
 }
 
 .even{
@@ -36,9 +38,7 @@ section:nth-child(even){
     position: absolute;
 }
 
-
-
 .box1{
-    
-    top: 92px;
+    bottom: 87px;
 }
+
