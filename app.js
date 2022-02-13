@@ -1,13 +1,23 @@
-let pos = 0;
-const box = document.getElementById('box');
 
-function moving(){
-    // 49 because the clear interval won't stop the function from running that iteration
-    if(pos === 149) clearInterval(t);
-    pos++;
-    box.style.left = pos + 'px';
-}
+class AnimationContainer{
+    constructor(box){
+        this.pos = 0;
+        this.d = -1; //direction
+        this.box = box;
+    }
+    moving(){
+        if(this.pos === (235-50) || this.pos === 0 ) this.d *= -1;
+        this.pos += this.d;
+        this.box.style.left = this.pos + 'px';
+    }
+    
+};
 
-var t = setInterval(moving, 30);
+
+
+const boxElement = document.getElementById('box1');
+const animationContainerA = new AnimationContainer(boxElement);
+setInterval(() => animationContainerA.moving(), 30);
+
 
 
