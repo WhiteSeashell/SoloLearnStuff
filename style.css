@@ -18,17 +18,27 @@ section:nth-child(even){
     background-color: #42b92ae0;
 }
 
-#container1{
+.container{
     width: 235px;
     height: 235px;
     background-color: #580b33;
     position: relative;
 }
 
-#box1{
+.even{
+    background-color: #471c3c;
+}
+
+.box{
     width: 50px;
     height: 50px;
     background-color: #86115f;
     position: absolute;
+}
+
+
+
+.box1{
+    
     top: 92px;
 }

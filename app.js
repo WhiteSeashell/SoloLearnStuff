@@ -15,7 +15,7 @@ class AnimationContainer{
 
 
 
-const boxElement = document.getElementById('box1');
+const boxElement = document.querySelector('.box1');
 const animationContainerA = new AnimationContainer(boxElement);
 setInterval(() => animationContainerA.moving(), 30);
 
